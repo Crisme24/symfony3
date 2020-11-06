@@ -2,13 +2,47 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Symfony 3!{% endblock %}</title>
+        <title>{% block title %}Symfony 3{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{asset('css/modern-business.css')}}" rel="stylesheet">
+        
     </head>
     <body>
+        {% block header %}
+        <nav class="navbar fixed-top navbar-expand-lg navbar-ligth bg-ligth fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">Symfony 3</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Tapas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Bares
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="">Valencia</a>
+              <a class="dropdown-item" href="">Barcelona</a>
+              <a class="dropdown-item" href="">Madrid</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Reservas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+        {% endblock %}
         {% block body %}{% endblock %}
         {% block javascripts %}
         <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
