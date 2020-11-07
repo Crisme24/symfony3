@@ -3,11 +3,12 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
-body {
-  padding-top: 56px;
+
+a:hover{
+  color: black !important;
 }
 
-.carousel-item {
+.carousel {
   height: 65vh;
   min-height: 300px;
   background: no-repeat center center scroll;
@@ -19,4 +20,30 @@ body {
 
 .portfolio-item {
   margin-bottom: 30px;
+}
+
+.carrusel{
+    border-top-left-radius: 4em;
+    border-top-right-radius: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-image: url('https://i.pinimg.com/474x/35/74/08/357408f384cd1d7df1caa9a72a488e7a.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+  }
+
+.btn{
+  background: black;
+  color: white;
+  font-size: 12px;
+  border: 1px solid black;
+}
+
+.btn:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
