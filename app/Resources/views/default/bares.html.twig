@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
+
+{% if sitio == 'vlc' or sitio == 'todos' %}
+    <div class="row">
+     
+      <div class="col-lg-8 mb-4">
+       
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24639.92247370487!2d-0.3850638301372867!3d39.46954763711128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f07395470eb%3A0xf83d75c9292b9e16!2sRestaurante%20Cosmo%20Valencia!5e0!3m2!1ses!2ses!4v1604828970090!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      
+      <div class="col-lg-4 mb-4">
+        <h3>Contact Details</h3>
+        <p>
+          Av. de María Cristina, 8
+          <br>46001 València, Valencia
+          <br>
+        </p>
+        <p>
+          <abbr title="Phone">P</abbr>: (123) 456-7890
+        </p>
+        <p>
+          <abbr title="Email">E</abbr>:
+          <a href="mailto:name@example.com">name@example.com
+          </a>
+        </p>
+        <p>
+          <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
+        </p>
+      </div>
+    </div>
+{% endif %} 
+
+{% if sitio == 'bcn' or sitio == 'todos' %}
+    <div class="row">
+     
+      <div class="col-lg-8 mb-4">
+       
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47889.76430952578!2d2.136027369938225!3d41.39341159129574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3fa328a03cf%3A0x4b8eb8bd0e02543!2sSibo%20Chinese%20Gastro%20Bar!5e0!3m2!1ses!2ses!4v1604829137217!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      
+      <div class="col-lg-4 mb-4">
+        <h3>Contact Details</h3>
+        <p>
+          Carrer d'Aribau, 65
+          <br> 08011 Barcelona
+          <br>
+        </p>
+        <p>
+          <abbr title="Phone">P</abbr>: (123) 456-7890
+        </p>
+        <p>
+          <abbr title="Email">E</abbr>:
+          <a href="mailto:name@example.com">name@example.com
+          </a>
+        </p>
+        <p>
+          <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
+        </p>
+      </div>
+    </div>
+{% endif %} 
+
+{% if sitio == 'mdr' or sitio == 'todos' %}
+    <div class="row">
+     
+      <div class="col-lg-8 mb-4">
+       
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48588.51556850181!2d-3.7325753397979997!3d40.43582091671267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229ce9503e5cb%3A0xbf82d13640242585!2sEl%20Social!5e0!3m2!1ses!2ses!4v1604829296779!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      
+      <div class="col-lg-4 mb-4">
+        <h3>Contact Details</h3>
+        <p>
+          Calle de Hernán Cortés, 19
+          <br> 28004 Madrid
+          <br>
+        </p>
+        <p>
+          <abbr title="Phone">P</abbr>: (123) 456-7890
+        </p>
+        <p>
+          <abbr title="Email">E</abbr>:
+          <a href="mailto:name@example.com">name@example.com
+          </a>
+        </p>
+        <p>
+          <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
+        </p>
+      </div>
+    </div>
+{% endif %} 
+
+{% endblock %}
+
+

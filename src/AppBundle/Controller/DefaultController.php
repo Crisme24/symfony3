@@ -27,4 +27,13 @@ class DefaultController extends Controller
         // replace this example code with whatever you need
         return $this->render('default/nosotros.html.twig');
     }
+
+    /**
+     * @Route("/contactar/{sitio}", name="contactar")
+     */
+    public function contactarAction(Request $request, $sitio="todos")
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/bares.html.twig', array("sitio" => $sitio ));
+    }
 }
